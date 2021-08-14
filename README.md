@@ -37,6 +37,12 @@ npm run start:dev
 npm run start:prod
 ```
 
+3. Para ejecutar los Unit Test. 
+
+```
+npm run test
+```
+
 ### Project Structure 🛠️
 
 estos son los archivos y carpetas que te interesaria modificar
