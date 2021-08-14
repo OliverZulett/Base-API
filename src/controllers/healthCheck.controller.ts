@@ -1,4 +1,4 @@
-import { Request, NextFunction, Response } from 'express';
+import { Request, Response } from 'express';
 import { HealthCheckService } from '../services/healthCheck.service';
 
 export class HealthCheckController {
@@ -8,7 +8,7 @@ export class HealthCheckController {
     this.healthCheckService = new HealthCheckService();
   }
 
-  public checkHealth = (req: Request, res: Response, next: NextFunction) => {
+  public checkHealth = (req: Request, res: Response) => {
     const apiStatus = this.healthCheckService.checkHealth();
     return res.status(200).send(apiStatus);
   };

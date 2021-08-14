@@ -18,12 +18,13 @@ module.exports = {
   },
   plugins: ['prettier', '@typescript-eslint'],
   rules: {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     'comma-dangle': ['error', 'always-multiline'],
     'no-empty-pattern': ['off'],
     'no-undef': ['error'],
     'no-var': ['error'],
     'object-curly-spacing': ['error', 'always'],
-    indent: ['off'],
+    indent: ['error'],
     'prettier/prettier': [
       'error',
       {
