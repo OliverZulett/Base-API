@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { HealthCheckService } from '../services/healthCheck.service';
+import { HealthCheckService } from '../../services/healthCheck/healthCheck.service';
 
 export class HealthCheckController {
   private healthCheckService: HealthCheckService;

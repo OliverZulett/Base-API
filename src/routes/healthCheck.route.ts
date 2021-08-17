@@ -1,4 +1,4 @@
-import { HealthCheckController } from '../controllers/healthCheck.controller';
+import { HealthCheckController } from '../controllers/healthCheck/healthCheck.controller';
 import * as express from 'express';
 
 export class HealthCheckRoute {
